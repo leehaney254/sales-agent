@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterModule } from '@angular/router';
 import { SigninComponent } from './signin/signin.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SigninComponent],
-  template: ` <main>Habari dunia <app-signin></app-signin></main>`,
+  imports: [RouterOutlet, SigninComponent, RouterModule],
+  template: ` <main>
+    <router-outlet></router-outlet>
+  </main>`,
   styleUrl: './app.component.css',
 })
 export class AppComponent {
