@@ -1,5 +1,11 @@
 <div>
   <app-sidebar></app-sidebar>
-  <main class="container">Dashboard</main>
-  Dashboard
+  <main class="container">
+    <div class="dash-card-container">
+      <app-cards
+        *ngFor="let carddata of cardDataList"
+        [carddata]="carddata"
+      ></app-cards>
+    </div>
+  </main>
 </div>

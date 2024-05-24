@@ -1,3 +1,8 @@
 .container {
   margin-left: 260px;
 }
+
+.dash-card-container {
+  display: flex;
+  justify-content: space-around;
+}
