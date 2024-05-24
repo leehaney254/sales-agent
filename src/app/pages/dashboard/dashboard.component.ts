@@ -17,6 +17,8 @@ export class DashboardComponent {
   cardService: CardserviceService = inject(CardserviceService);
 
   constructor() {
-    this.cardDataList = this.cardService.getAllCardDataList();
+    this.cardService.getAllCardDataList().then((cardDataList: Carddata[]) => {
+      this.cardDataList = cardDataList;
+    })
   }
 }

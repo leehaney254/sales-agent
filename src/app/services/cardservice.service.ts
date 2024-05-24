@@ -5,15 +5,12 @@ import { Carddata } from '../components/cards/carddata';
   providedIn: 'root',
 })
 export class CardserviceService {
-  protected cardDataList: Carddata[] = [
-    { name: 'Collection', value: 12500, icon: 'monetization_on' },
-    { name: 'Signups', value: 200, icon: 'people' },
-    { name: 'Total Revenue', value: 34500, icon: 'attach_money' },
-    { name: 'Bounced Checks', value: 10, icon: 'undo' },
-  ];
+  url = 'http://localhost:3000/cardsList';
+
   constructor() {}
 
-  getAllCardDataList(): Carddata[] {
-    return this.cardDataList; 
+  async getAllCardDataList(): Promise<Carddata[]> {
+    const data = await fetch(this.url);
+    return (await data.json()) ?? [];
   }
 }
