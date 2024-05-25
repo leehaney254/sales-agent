@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Carddata } from '../components/cards/carddata';
+import { Carddata } from '../../components/cards/carddata';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +11,6 @@ export class CardserviceService {
 
   async getAllCardDataList(): Promise<Carddata[]> {
     const data = await fetch(this.url);
-    return (await data.json()) ?? []; 
+    return (await data.json()) ?? [];
   }
 }

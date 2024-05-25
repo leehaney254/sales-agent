@@ -7,7 +7,12 @@
         [carddata]="carddata"
       ></app-cards>
     </div>
-    <div class="dash-card-container">
+    <div>
+      <div>
+        <app-pirchart [single]="pieDataList"></app-pirchart>
+      </div>
+    </div>
+    <div>
       <div>
         <app-barchart [view]="view" [barData]="graphDataList"></app-barchart>
       </div>

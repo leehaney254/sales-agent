@@ -32,6 +32,55 @@
     }
   ],
   "signups": [
-    
+    {
+      "name": "Zeraki Finance",
+      "value": 89400
+    },
+    {
+      "name": "Zeraki AnalyticsA",
+      "value": 50000
+    },
+    {
+      "name": "Zeraki Timetable",
+      "value": 72000
+    }
+  ],
+  "invoices": [
+    {
+      "name": "Alliance High School",
+      "amount_due": 250.0,
+      "due_date": "2024-06-15",
+      "status": "Pending"
+    },
+    {
+      "name": "Kenya High School",
+      "amount_due": 480.0,
+      "due_date": "2024-07-01",
+      "status": "Paid"
+    },
+    {
+      "name": "Starehe Boys Centre",
+      "amount_due": 320.5,
+      "due_date": "2024-06-20",
+      "status": "Overdue"
+    },
+    {
+      "name": "Moi Girls High School",
+      "amount_due": 150.75,
+      "due_date": "2024-06-30",
+      "status": "Pending"
+    },
+    {
+      "name": "Mang'u High School",
+      "amount_due": 760.25,
+      "due_date": "2024-07-05",
+      "status": "Paid"
+    },
+    {
+      "name": "Lenana School",
+      "amount_due": 540.0,
+      "due_date": "2024-06-25",
+      "status": "Overdue"
+    }
   ]
 }
