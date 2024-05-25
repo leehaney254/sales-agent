@@ -1,0 +1,51 @@
+<table mat-table [dataSource]="schoolsData" class="mat-elevation-z8">
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef>School Name</th>
+    <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="type">
+    <th mat-header-cell *matHeaderCellDef>Type</th>
+    <td mat-cell *matCellDef="let element">{{ element.type }}</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="product">
+    <th mat-header-cell *matHeaderCellDef>Product</th>
+    <td mat-cell *matCellDef="let element">{{ element.product }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="county">
+    <th mat-header-cell *matHeaderCellDef>county</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.county }}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="contactInfo">
+    <th mat-header-cell *matHeaderCellDef>Contact Info</th>
+    <td mat-cell *matCellDef="let element">{{ element.contactInfo }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="registrationDate">
+    <th mat-header-cell *matHeaderCellDef>Registration Date</th>
+    <td mat-cell *matCellDef="let element">{{ element.registrationDate }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="balance">
+    <th mat-header-cell *matHeaderCellDef>Balance</th>
+    <td mat-cell *matCellDef="let element">{{ element.balance }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef>action</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-raised-button color="primary">Details</button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

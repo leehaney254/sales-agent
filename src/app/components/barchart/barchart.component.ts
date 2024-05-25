@@ -25,6 +25,7 @@ export class BarchartComponent implements OnInit {
   };
 
   @Input() barData!: any;
+  // @ts-ignore
   @Input() view!: number[];
   legendPosition = LegendPosition.Below;
 
