@@ -9,6 +9,8 @@ import { BarchartComponent } from '../../components/barchart/barchart.component'
 import { Platform } from '@ionic/angular';
 import { PirchartComponent } from '../../components/pirchart/pirchart.component';
 import { PiechartService } from '../../services/piechart/piechart.service';
+import { InvoiceComponent } from '../../components/invoice/invoice.component';
+import { InvoiceService } from '../../services/invoice/invoice.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,6 +21,7 @@ import { PiechartService } from '../../services/piechart/piechart.service';
     CardsComponent,
     BarchartComponent,
     PirchartComponent,
+    InvoiceComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
@@ -28,10 +31,12 @@ export class DashboardComponent {
   graphDataList: any[] = [];
   view: number[] = [];
   pieDataList: any[] = [];
+  invoiceList: any[] = [];
 
   cardService: CardserviceService = inject(CardserviceService);
   graphService: GraphService = inject(GraphService);
   pieService: PiechartService = inject(PiechartService);
+  invoiceService: InvoiceService = inject(InvoiceService);
 
   constructor(private platform: Platform) {
     this.cardService.getAllCardDataList().then((cardDataList: Carddata[]) => {
@@ -42,6 +47,9 @@ export class DashboardComponent {
     });
     this.pieService.getAllPieData().then((pieService: any[]) => {
       this.pieDataList = pieService;
+    });
+    this.invoiceService.getAllInvoiceData().then((invoiceService: any[]) => {
+      this.invoiceList = invoiceService;
     });
   }
 
