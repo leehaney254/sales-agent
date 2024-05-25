@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NgxChartsModule, LegendPosition } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'app-barchart',
@@ -9,8 +9,6 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
   styleUrl: './barchart.component.css',
 })
 export class BarchartComponent implements OnInit {
-  view: [number, number] = [700, 400];
-
   // options
   showXAxis: boolean = true;
   showYAxis: boolean = true;
@@ -27,6 +25,8 @@ export class BarchartComponent implements OnInit {
   };
 
   @Input() barData!: any;
+  @Input() view!: number[];
+  legendPosition = LegendPosition.Below;
 
   onSelect(event: Event) {
     console.log(event);
