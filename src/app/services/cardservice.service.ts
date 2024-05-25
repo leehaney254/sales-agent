@@ -11,6 +11,6 @@ export class CardserviceService {
 
   async getAllCardDataList(): Promise<Carddata[]> {
     const data = await fetch(this.url);
-    return (await data.json()) ?? [];
+    return (await data.json()) ?? []; 
   }
 }

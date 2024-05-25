@@ -4,5 +4,31 @@
     { "name": "Signups", "value": 200, "icon": "people" },
     { "name": "Total Revenue", "value": 34500, "icon": "attach_money" },
     { "name": "Bounced Checks", "value": 10, "icon": "undo" }
+  ],
+  "products": [
+    {
+      "name": "Zeraki Analytics",
+      "series": [
+        { "name": "Primary", "value": 120 },
+        { "name": "Secondary", "value": 90 },
+        { "name": "IGCSE", "value": 50 }
+      ]
+    },
+    {
+      "name": "Zeraki Finance",
+      "series": [
+        { "name": "Primary", "value": 150 },
+        { "name": "Secondary", "value": 100 },
+        { "name": "IGCSE", "value": 70 }
+      ]
+    },
+    {
+      "name": "Zeraki Timetable",
+      "series": [
+        { "name": "Primary", "value": 80 },
+        { "name": "Secondary", "value": 60 },
+        { "name": "IGCSE", "value": 40 }
+      ]
+    }
   ]
 }
