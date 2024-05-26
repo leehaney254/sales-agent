@@ -11,6 +11,8 @@ import { PirchartComponent } from '../../components/pirchart/pirchart.component'
 import { PiechartService } from '../../services/piechart/piechart.service';
 import { InvoiceComponent } from '../../components/invoice/invoice.component';
 import { InvoiceService } from '../../services/invoice/invoice.service';
+import { MatIconModule } from '@angular/material/icon';
+import { TopbarComponent } from '../../components/topbar/topbar.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,6 +24,8 @@ import { InvoiceService } from '../../services/invoice/invoice.service';
     BarchartComponent,
     PirchartComponent,
     InvoiceComponent,
+    MatIconModule,
+    TopbarComponent,
   ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css',
