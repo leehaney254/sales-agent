@@ -15,18 +15,17 @@ export class BarchartComponent implements OnInit {
   gradient: boolean = true;
   showLegend: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Country';
+  xAxisLabel: string = 'Zeraki Product';
   showYAxisLabel: boolean = true;
-  yAxisLabel: string = 'Population';
-  legendTitle: string = 'Years';
+  yAxisLabel: string = 'Sign-ups';
+  legendTitle: string = 'School Type';
 
   colorScheme: any = {
-    domain: ['#5AA454', '#C7B42C', '#AAAAAA'],
+    domain: ['#5AA454', '#1679ab', '#E44D25'],
   };
 
   @Input() barData!: any;
-  // @ts-ignore
-  @Input() view!: number[];
+  @Input() view!: [number, number];
   legendPosition = LegendPosition.Below;
 
   onSelect(event: Event) {

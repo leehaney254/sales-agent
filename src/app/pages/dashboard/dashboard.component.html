@@ -8,12 +8,14 @@
         [carddata]="carddata"
       ></app-cards>
     </div>
-    <div>
+    <div class="pie-cont">
+      <h2 class="cont-head">Signups</h2>
       <div>
-        <app-pirchart [single]="pieDataList"></app-pirchart>
+        <app-pirchart [view]="pieView" [single]="pieDataList"></app-pirchart>
       </div>
     </div>
-    <div>
+    <div class="bar-cont">
+      <h2 class="cont-head">Signup disribution</h2>
       <div>
         <app-barchart [view]="view" [barData]="graphDataList"></app-barchart>
       </div>

@@ -14,11 +14,11 @@ export class PirchartComponent implements OnInit {
   showLabels: boolean = true;
 
   colorScheme: any = {
-    domain: ['#5AA454', '#E44D25', '#CFC0BB'],
+    domain: ['#1679ab', '#5AA454', '#E44D25'],
   };
 
   @Input() single!: any;
-  view: [number, number] = [500, 400];
+  @Input() view!: [number, number];
 
   onSelect(event: Event) {
     console.log(event);

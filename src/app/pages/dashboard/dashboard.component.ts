@@ -33,7 +33,8 @@ import { TopbarComponent } from '../../components/topbar/topbar.component';
 export class DashboardComponent {
   cardDataList: Carddata[] = [];
   graphDataList: any[] = [];
-  view: number[] = [];
+  view!: [number, number];
+  pieView!: [number, number];
   pieDataList: any[] = [];
   invoiceList: any[] = [];
 
@@ -69,8 +70,10 @@ export class DashboardComponent {
     const height = this.platform.height();
     if (width > height) {
       this.view = [0.8 * width, 0.8 * height];
+      this.pieView = [0.7 * width, 0.7 * height];
     } else {
       this.view = [0.85 * width, 0.85 * height];
+      this.pieView = [0.75 * width, 0.5 * height];
     }
   }
 }
