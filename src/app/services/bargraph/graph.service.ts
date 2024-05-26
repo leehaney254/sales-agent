@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Barchartdata } from '../../components/barchart/barchartdata';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +9,7 @@ export class GraphService {
 
   constructor() {}
 
-  async getAllGraphData(): Promise<any[]> {
+  async getAllGraphData(): Promise<Barchartdata[]> {
     const data = await fetch(this.url);
     return (await data.json()) ?? [];
   }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { InvoiceData } from '../../components/invoice/invoice-data';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +9,7 @@ export class InvoiceService {
 
   constructor() {}
 
-  async getAllInvoiceData(): Promise<any[]> {
+  async getAllInvoiceData(): Promise<InvoiceData[]> {
     const data = await fetch(this.url);
     return (await data.json()) ?? [];
   }

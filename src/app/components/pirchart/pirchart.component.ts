@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { PieData } from './pie-data';
 
 @Component({
   selector: 'app-pirchart',
@@ -17,7 +18,7 @@ export class PirchartComponent implements OnInit {
     domain: ['#1679ab', '#5AA454', '#E44D25'],
   };
 
-  @Input() single!: any;
+  @Input() single!: PieData[];
   @Input() view!: [number, number];
 
   onSelect(event: Event) {

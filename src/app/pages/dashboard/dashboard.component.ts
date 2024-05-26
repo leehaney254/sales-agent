@@ -13,6 +13,9 @@ import { InvoiceComponent } from '../../components/invoice/invoice.component';
 import { InvoiceService } from '../../services/invoice/invoice.service';
 import { MatIconModule } from '@angular/material/icon';
 import { TopbarComponent } from '../../components/topbar/topbar.component';
+import { Barchartdata } from '../../components/barchart/barchartdata';
+import { PieData } from '../../components/pirchart/pie-data';
+import { InvoiceData } from '../../components/invoice/invoice-data';
 
 @Component({
   selector: 'app-dashboard',
@@ -32,11 +35,11 @@ import { TopbarComponent } from '../../components/topbar/topbar.component';
 })
 export class DashboardComponent {
   cardDataList: Carddata[] = [];
-  graphDataList: any[] = [];
   view!: [number, number];
   pieView!: [number, number];
-  pieDataList: any[] = [];
-  invoiceList: any[] = [];
+  graphDataList: Barchartdata[] = [];
+  pieDataList: PieData[] = [];
+  invoiceList: InvoiceData[] = [];
 
   cardService: CardserviceService = inject(CardserviceService);
   graphService: GraphService = inject(GraphService);
@@ -47,15 +50,17 @@ export class DashboardComponent {
     this.cardService.getAllCardDataList().then((cardDataList: Carddata[]) => {
       this.cardDataList = cardDataList;
     });
-    this.graphService.getAllGraphData().then((graphService: any[]) => {
+    this.graphService.getAllGraphData().then((graphService: Barchartdata[]) => {
       this.graphDataList = graphService;
     });
-    this.pieService.getAllPieData().then((pieService: any[]) => {
+    this.pieService.getAllPieData().then((pieService: PieData[]) => {
       this.pieDataList = pieService;
     });
-    this.invoiceService.getAllInvoiceData().then((invoiceService: any[]) => {
-      this.invoiceList = invoiceService;
-    });
+    this.invoiceService
+      .getAllInvoiceData()
+      .then((invoiceService: InvoiceData[]) => {
+        this.invoiceList = invoiceService;
+      });
   }
 
   //check for screen change so as to resize our graphs

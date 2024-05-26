@@ -18,7 +18,7 @@ export class SchoolComponent {
   schoolService: SchoolsService = inject(SchoolsService);
 
   constructor() {
-    this.schoolService.getAllSchoolData().then((schoolService: any[]) => {
+    this.schoolService.getAllSchoolData().then((schoolService: Schools[]) => {
       this.schoolList = schoolService;
     });
   }

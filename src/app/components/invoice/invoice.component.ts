@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
-import { Invoices } from './invoices';
+import { InvoiceData } from './invoice-data';
 
 @Component({
   selector: 'app-invoice',
@@ -11,6 +11,6 @@ import { Invoices } from './invoices';
   styleUrl: './invoice.component.css',
 })
 export class InvoiceComponent {
-  @Input() tableData!: Invoices[];
+  @Input() tableData!: InvoiceData[];
   displayedColumns: String[] = ['name', 'amount_due', 'due_date', 'action'];
 }

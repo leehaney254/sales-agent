@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NgxChartsModule, LegendPosition } from '@swimlane/ngx-charts';
+import { Barchartdata } from './barchartdata';
 
 @Component({
   selector: 'app-barchart',
@@ -24,7 +25,7 @@ export class BarchartComponent implements OnInit {
     domain: ['#5AA454', '#1679ab', '#E44D25'],
   };
 
-  @Input() barData!: any;
+  @Input() barData!: Barchartdata[];
   @Input() view!: [number, number];
   legendPosition = LegendPosition.Below;
 
