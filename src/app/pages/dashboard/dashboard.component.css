@@ -5,6 +5,7 @@
 .dash-card-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .pie-cont {
@@ -23,4 +24,18 @@
 
 .cont-head {
   color: #9ea0ad;
+}
+
+@media only screen and (max-width: 1120px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .dash-card-container {
+    gap: 1rem 0;
+  }
+
+  .container {
+    margin-left: 0;
+  }
 }
