@@ -5,28 +5,32 @@
       "value": 12500,
       "icon": "monetization_on",
       "trend": "trending_up",
-      "trend_amount": "+37%"
+      "trend_amount": "+37%",
+      "styles": "card-trend"
     },
     {
       "name": "Signups",
       "value": 200,
       "icon": "people",
       "trend": "trending_down",
-      "trend_amount": "-3%"
+      "trend_amount": "-3%",
+      "styles": "card-down-trend"
     },
     {
       "name": "Total Revenue",
       "value": 34500,
       "icon": "attach_money",
       "trend": "trending_up",
-      "trend_amount": "+10%"
+      "trend_amount": "+10%",
+      "styles": "card-trend"
     },
     {
       "name": "Bounced Checks",
       "value": 10,
       "icon": "undo",
       "trend": "trending_down",
-      "trend_amount": "-1%"
+      "trend_amount": "-1%",
+      "styles": "card-down-trend"
     }
   ],
   "products": [

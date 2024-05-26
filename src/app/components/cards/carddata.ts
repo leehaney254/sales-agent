@@ -4,4 +4,5 @@ export interface Carddata {
   icon: string;
   trend: string;
   trend_amount: string;
+  styles: string;
 }
