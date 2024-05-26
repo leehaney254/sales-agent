@@ -2,3 +2,12 @@
   display: flex;
   align-items: center;
 }
+
+.cards {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.cardhead {
+  color: #9ea0ad;
+}

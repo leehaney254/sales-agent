@@ -1,9 +1,33 @@
 {
   "cardsList": [
-    { "name": "Collection", "value": 12500, "icon": "monetization_on" },
-    { "name": "Signups", "value": 200, "icon": "people" },
-    { "name": "Total Revenue", "value": 34500, "icon": "attach_money" },
-    { "name": "Bounced Checks", "value": 10, "icon": "undo" }
+    {
+      "name": "Collection",
+      "value": 12500,
+      "icon": "monetization_on",
+      "trend": "trending_up",
+      "trend_amount": "+37%"
+    },
+    {
+      "name": "Signups",
+      "value": 200,
+      "icon": "people",
+      "trend": "trending_down",
+      "trend_amount": "-3%"
+    },
+    {
+      "name": "Total Revenue",
+      "value": 34500,
+      "icon": "attach_money",
+      "trend": "trending_up",
+      "trend_amount": "+10%"
+    },
+    {
+      "name": "Bounced Checks",
+      "value": 10,
+      "icon": "undo",
+      "trend": "trending_down",
+      "trend_amount": "-1%"
+    }
   ],
   "products": [
     {
