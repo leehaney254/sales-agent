@@ -66,3 +66,28 @@
   background-color: #1679ab;
   border-radius: 15px;
 }
+
+.close {
+  display: none;
+}
+
+@media only screen and (max-width: 1120px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 1s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.open {
+    left: 0; /* Show the sidebar when 'open' class is added */
+  }
+
+  .close {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
