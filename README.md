@@ -101,6 +101,12 @@ To get a local copy up and running, follow these steps.
 git clone https://github.com/leehaney254/sales-agent.git
 ```
 
+- Checkout to develop branch by running
+
+```sh
+git checkout develop
+```
+
 - Run
 
 ```sh
