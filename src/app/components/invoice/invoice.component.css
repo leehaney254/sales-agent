@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-table {
+  background-color: #ffffff; /* White background */
+}
+
+.mat-mdc-row {
+  color: #000;
+}
+
+.mat-mdc-header-row {
+  color: #000;
+}
+
+#btn-color {
+  background-color: #1679ab;
+}

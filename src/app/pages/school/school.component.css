@@ -1,3 +1,14 @@
 .container {
   margin-left: 230px;
 }
+
+.pie-cont {
+  background-color: #fff;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.cont-head {
+  color: #9ea0ad;
+}
