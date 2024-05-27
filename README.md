@@ -3,7 +3,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Tutors Appointment Frontend ](#-tutors-appointment-frontend-)
+- [📖 Sales Agent Dashboard ](#-Sales-Agent-Dashboard-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Back-end ](#back-end-)
@@ -116,7 +116,7 @@ npm install
 - Run the command below to make sure json server is running
 
 ```sh
-npm npm run json-server
+npm run json-server
 ```
 
 - Run the command below to start the app
