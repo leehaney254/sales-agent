@@ -12,3 +12,9 @@
 .cont-head {
   color: #9ea0ad;
 }
+
+@media only screen and (max-width: 1120px) {
+  .container {
+    margin-left: 0;
+  }
+}
