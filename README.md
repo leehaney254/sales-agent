@@ -60,7 +60,7 @@ The apps ERD diagram of how the json server should function can be found [here.]
 
 ## 🚀 Live Demo <a name="live-demo"></a>.
 
-- [Live Demo Link](/)
+- The project is not yet hosted.
 
   - To login as you can use any email and password. The logic has not been implemented.
 
