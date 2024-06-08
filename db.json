@@ -1,0 +1,365 @@
+{
+  "cardsList": [
+    {
+      "name": "Collection",
+      "value": 12500,
+      "icon": "monetization_on",
+      "trend": "trending_up",
+      "trend_amount": "+37%",
+      "styles": "card-trend"
+    },
+    {
+      "name": "Signups",
+      "value": 200,
+      "icon": "people",
+      "trend": "trending_down",
+      "trend_amount": "-3%",
+      "styles": "card-down-trend"
+    },
+    {
+      "name": "Total Revenue",
+      "value": 34500,
+      "icon": "attach_money",
+      "trend": "trending_up",
+      "trend_amount": "+10%",
+      "styles": "card-trend"
+    },
+    {
+      "name": "Bounced Checks",
+      "value": 10,
+      "icon": "undo",
+      "trend": "trending_down",
+      "trend_amount": "-1%",
+      "styles": "card-down-trend"
+    }
+  ],
+  "products": [
+    {
+      "name": "Zeraki Analytics",
+      "series": [
+        { "name": "Primary", "value": 120 },
+        { "name": "Secondary", "value": 90 },
+        { "name": "IGCSE", "value": 50 }
+      ]
+    },
+    {
+      "name": "Zeraki Finance",
+      "series": [
+        { "name": "Primary", "value": 150 },
+        { "name": "Secondary", "value": 100 },
+        { "name": "IGCSE", "value": 70 }
+      ]
+    },
+    {
+      "name": "Zeraki Timetable",
+      "series": [
+        { "name": "Primary", "value": 80 },
+        { "name": "Secondary", "value": 60 },
+        { "name": "IGCSE", "value": 40 }
+      ]
+    }
+  ],
+  "signups": [
+    {
+      "name": "Zeraki Finance",
+      "value": 89400
+    },
+    {
+      "name": "Zeraki AnalyticsA",
+      "value": 50000
+    },
+    {
+      "name": "Zeraki Timetable",
+      "value": 72000
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "Sunshine Primary School",
+      "type": "Primary",
+      "product": "Zeraki Analytics",
+      "county": "Nairobi",
+      "registrationDate": "2021-01-15",
+      "contactInfo": "info@sunshineprimary.com",
+      "balance": 5000,
+      "invoices": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Greenfield Secondary School",
+      "type": "Secondary",
+      "product": "Zeraki Finance",
+      "county": "Mombasa",
+      "registrationDate": "2020-08-10",
+      "contactInfo": "info@greenfieldsecondary.com",
+      "balance": 3500,
+      "invoices": [3, 4]
+    },
+    {
+      "id": 3,
+      "name": "Hilltop IGCSE School",
+      "type": "IGCSE",
+      "product": "Zeraki Timetable",
+      "county": "Kisumu",
+      "registrationDate": "2019-05-22",
+      "contactInfo": "info@hilltopigcse.com",
+      "balance": 7500,
+      "invoices": [5, 6]
+    },
+    {
+      "id": 4,
+      "name": "Riverdale Primary School",
+      "type": "Primary",
+      "product": "Zeraki Analytics",
+      "county": "Nakuru",
+      "registrationDate": "2022-03-30",
+      "contactInfo": "info@riverdaleprimary.com",
+      "balance": 2000,
+      "invoices": [7, 8]
+    },
+    {
+      "id": 5,
+      "name": "Lakeside Secondary School",
+      "type": "Secondary",
+      "product": "Zeraki Finance",
+      "county": "Kisii",
+      "registrationDate": "2018-11-15",
+      "contactInfo": "info@lakesidesecondary.com",
+      "balance": 4800,
+      "invoices": [9, 10]
+    }
+  ],
+  "invoices": [
+    {
+      "id": 1,
+      "schoolId": 1,
+      "invoiceNumber": "INV001",
+      "invoiceItem": "Zeraki Analytics",
+      "creationDate": "2024-01-10",
+      "dueDate": "2024-02-10",
+      "amount": 3000,
+      "paidAmount": 1500,
+      "balance": 1500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 20,
+      "collections": [1, 2]
+    },
+    {
+      "id": 2,
+      "schoolId": 1,
+      "invoiceNumber": "INV002",
+      "invoiceItem": "Zeraki Finance",
+      "creationDate": "2024-03-10",
+      "dueDate": "2024-04-10",
+      "amount": 2000,
+      "paidAmount": 0,
+      "balance": 2000,
+      "completionStatus": "Pending",
+      "daysUntilDue": 40,
+      "collections": [3]
+    },
+    {
+      "id": 3,
+      "schoolId": 2,
+      "invoiceNumber": "INV003",
+      "invoiceItem": "Zeraki Finance",
+      "creationDate": "2023-12-15",
+      "dueDate": "2024-01-15",
+      "amount": 3500,
+      "paidAmount": 3500,
+      "balance": 0,
+      "completionStatus": "Paid",
+      "daysUntilDue": -30,
+      "collections": [4]
+    },
+    {
+      "id": 4,
+      "schoolId": 2,
+      "invoiceNumber": "INV004",
+      "invoiceItem": "Zeraki Analytics",
+      "creationDate": "2024-02-01",
+      "dueDate": "2024-03-01",
+      "amount": 1000,
+      "paidAmount": 500,
+      "balance": 500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 10,
+      "collections": [5]
+    },
+    {
+      "id": 5,
+      "schoolId": 3,
+      "invoiceNumber": "INV005",
+      "invoiceItem": "Zeraki Timetable",
+      "creationDate": "2024-01-20",
+      "dueDate": "2024-02-20",
+      "amount": 4000,
+      "paidAmount": 1000,
+      "balance": 3000,
+      "completionStatus": "Pending",
+      "daysUntilDue": 30,
+      "collections": [6]
+    },
+    {
+      "id": 6,
+      "schoolId": 3,
+      "invoiceNumber": "INV006",
+      "invoiceItem": "Zeraki Finance",
+      "creationDate": "2024-03-05",
+      "dueDate": "2024-04-05",
+      "amount": 3500,
+      "paidAmount": 0,
+      "balance": 3500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 35,
+      "collections": [7]
+    },
+    {
+      "id": 7,
+      "schoolId": 4,
+      "invoiceNumber": "INV007",
+      "invoiceItem": "Zeraki Analytics",
+      "creationDate": "2024-02-15",
+      "dueDate": "2024-03-15",
+      "amount": 2000,
+      "paidAmount": 500,
+      "balance": 1500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 15,
+      "collections": [8]
+    },
+    {
+      "id": 8,
+      "schoolId": 4,
+      "invoiceNumber": "INV008",
+      "invoiceItem": "Zeraki Timetable",
+      "creationDate": "2024-04-10",
+      "dueDate": "2024-05-10",
+      "amount": 1500,
+      "paidAmount": 1000,
+      "balance": 500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 50,
+      "collections": [9]
+    },
+    {
+      "id": 9,
+      "schoolId": 5,
+      "invoiceNumber": "INV009",
+      "invoiceItem": "Zeraki Finance",
+      "creationDate": "2024-01-05",
+      "dueDate": "2024-02-05",
+      "amount": 4800,
+      "paidAmount": 2000,
+      "balance": 2800,
+      "completionStatus": "Pending",
+      "daysUntilDue": 25,
+      "collections": [10]
+    },
+    {
+      "id": 10,
+      "schoolId": 5,
+      "invoiceNumber": "INV010",
+      "invoiceItem": "Zeraki Analytics",
+      "creationDate": "2024-03-20",
+      "dueDate": "2024-04-20",
+      "amount": 3000,
+      "paidAmount": 1500,
+      "balance": 1500,
+      "completionStatus": "Pending",
+      "daysUntilDue": 40,
+      "collections": [11]
+    }
+  ],
+  "collections": [
+    {
+      "id": 1,
+      "invoiceId": 1,
+      "collectionNumber": "COL001",
+      "dateOfCollection": "2024-01-15",
+      "status": "Valid",
+      "amount": 1000
+    },
+    {
+      "id": 2,
+      "invoiceId": 1,
+      "collectionNumber": "COL002",
+      "dateOfCollection": "2024-01-25",
+      "status": "Valid",
+      "amount": 500
+    },
+    {
+      "id": 3,
+      "invoiceId": 2,
+      "collectionNumber": "COL003",
+      "dateOfCollection": "2024-03-15",
+      "status": "Bounced",
+      "amount": 0
+    },
+    {
+      "id": 4,
+      "invoiceId": 3,
+      "collectionNumber": "COL004",
+      "dateOfCollection": "2024-01-05",
+      "status": "Valid",
+      "amount": 3500
+    },
+    {
+      "id": 5,
+      "invoiceId": 4,
+      "collectionNumber": "COL005",
+      "dateOfCollection": "2024-02-15",
+      "status": "Valid",
+      "amount": 500
+    },
+    {
+      "id": 6,
+      "invoiceId": 5,
+      "collectionNumber": "COL006",
+      "dateOfCollection": "2024-01-25",
+      "status": "Valid",
+      "amount": 1000
+    },
+    {
+      "id": 7,
+      "invoiceId": 6,
+      "collectionNumber": "COL007",
+      "dateOfCollection": "2024-03-20",
+      "status": "Valid",
+      "amount": 0
+    },
+    {
+      "id": 8,
+      "invoiceId": 7,
+      "collectionNumber": "COL008",
+      "dateOfCollection": "2024-02-20",
+      "status": "Valid",
+      "amount": 500
+    },
+    {
+      "id": 9,
+      "invoiceId": 8,
+      "collectionNumber": "COL009",
+      "dateOfCollection": "2024-04-15",
+      "status": "Valid",
+      "amount": 1000
+    },
+    {
+      "id": 10,
+      "invoiceId": 9,
+      "collectionNumber": "COL010",
+      "dateOfCollection": "2024-01-15",
+      "status": "Valid",
+      "amount": 2000
+    },
+    {
+      "id": 11,
+      "invoiceId": 10,
+      "collectionNumber": "COL011",
+      "dateOfCollection": "2024-03-25",
+      "status": "Valid",
+      "amount": 1500
+    }
+  ]
+}

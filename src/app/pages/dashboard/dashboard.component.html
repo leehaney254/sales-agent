@@ -1,0 +1,30 @@
+<div>
+  <app-sidebar class="sidebar"></app-sidebar>
+  <main class="container">
+    <app-topbar></app-topbar>
+    <div class="dash-card-container">
+      <app-cards
+        *ngFor="let carddata of cardDataList"
+        [carddata]="carddata"
+      ></app-cards>
+    </div>
+    <div class="pie-cont">
+      <h2 class="cont-head">Signups</h2>
+      <div>
+        <app-pirchart [view]="pieView" [single]="pieDataList"></app-pirchart>
+      </div>
+    </div>
+    <div class="bar-cont">
+      <h2 class="cont-head">Signup disribution</h2>
+      <div>
+        <app-barchart [view]="view" [barData]="graphDataList"></app-barchart>
+      </div>
+    </div>
+    <div class="pie-cont">
+      <h2 class="cont-head">Invoices</h2>
+      <div>
+        <app-invoice [tableData]="invoiceList"></app-invoice>
+      </div>
+    </div>
+  </main>
+</div>

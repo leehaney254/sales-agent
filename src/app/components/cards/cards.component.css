@@ -1,0 +1,47 @@
+.cards {
+  background-color: #fff;
+  width: 12rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.cardhead {
+  color: #9ea0ad;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-trend {
+  display: flex;
+  color: rgb(121, 221, 138);
+}
+
+.card-down-trend {
+  display: flex;
+  color: rgb(250, 138, 108);
+}
+
+.card-middle {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-bottom a {
+  color: #9ea0ad;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-color {
+  color: #1679ab;
+}

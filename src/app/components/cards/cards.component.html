@@ -1,0 +1,16 @@
+<div class="cards">
+  <div class="card-top">
+    <p class="cardhead">{{ carddata.name }}</p>
+    <div [class]="carddata.styles">
+      <mat-icon>{{ carddata.trend }}</mat-icon>
+      <p>{{ carddata.trend_amount }}</p>
+    </div>
+  </div>
+  <div class="card-middle">
+    {{ carddata.value }}
+  </div>
+  <div class="card-bottom">
+    <a routerLink="/dashboard">view more detail</a>
+    <mat-icon class="icon-color">{{ carddata.icon }}</mat-icon>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="sidebar" [class.open]="isSidebarOpen">
+  <div class="logo">
+    <img src="assets/zerakilogo.png" alt="Logo" />
+  </div>
+  <div class="close">
+    <mat-icon (click)="closeSidebar()">close</mat-icon>
+  </div>
+  <nav class="nav-linker">
+    <div class="nav-links">
+      <a routerLink="/dashboard"><mat-icon>dashboard</mat-icon>Dashboard</a>
+      <a routerLink="/school"><mat-icon>assignment</mat-icon>School</a>
+    </div>
+
+    <div class="bottom-links">
+      <a routerLink="/"><mat-icon>assignment_return</mat-icon>Logout</a>
+    </div>
+  </nav>
+</div>
